@@ -58,14 +58,15 @@
                 </div>
             </div>
 
-            <div class="footer__bottom">
-                <div class="container">
+            <div class="footer__bottom container">
+                
                     <div class="footer__bottom__left">
                         <button>SIGN-UP NOW!</button>
                     </div>
                     <div class="footer__bottom__right">
+                            
                         <ul>
-                            <li>FOLLOW US</li>
+                            <li><span>FOLLOW US</span></li>
                             <li>F</li>
                             <li>F</li>
                             <li>F</li>
@@ -73,7 +74,7 @@
                             <li>FS</li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
       
   </footer>
@@ -91,7 +92,7 @@ export default {
 
 .footer {
     height:50vh;
-    background-color: green;
+    background-color: $footer-bar-color;
 
     &__top {
         height: 40vh;
@@ -109,7 +110,6 @@ export default {
         &__col {
             width: calc(100% / 3);
             height:100%;
-            border: 2px solid red;
 
             h3 {
                 color: white;
@@ -132,11 +132,14 @@ export default {
         background-color: $footer-bar-color;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+    
 
         &__left {
             height: 100%;
-            width: 20%;
+            width: 50%;
+            display: flex;
+            align-items:center;
+
             button {
                 padding: 5px;
                 border: 2px solid $main-bar-color;
@@ -146,8 +149,24 @@ export default {
         }
 
         &__right {
-            width: 80%;
+            width: 50%;
             height: 100%;
+            display: flex;
+            align-items:center;
+
+            ul {
+                list-style: none;
+                display: flex;
+
+                li {
+                    margin: 10px;
+                    color: white;
+
+                    span {
+                        color: $main-bar-color;
+                    }
+                }
+            }
         }
     }
 }
