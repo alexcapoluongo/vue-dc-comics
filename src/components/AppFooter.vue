@@ -67,11 +67,21 @@
                             
                         <ul>
                             <li><span>FOLLOW US</span></li>
-                            <li>F</li>
-                            <li>F</li>
-                            <li>F</li>
-                            <li>F</li>
-                            <li>FS</li>
+                            <li>
+                                <i class="fab fa-facebook"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-youtube"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-pinterest"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </li>
                         </ul>
                     </div>
                 
@@ -117,6 +127,7 @@ export default {
 
             ul {
                 list-style: none;
+                margin-bottom:1em;
                 li {
                     a{
                         text-decoration: none;
@@ -141,7 +152,7 @@ export default {
             align-items:center;
 
             button {
-                padding: 5px;
+                padding: 10px;
                 border: 2px solid $main-bar-color;
                 background-color: $footer-bar-color;
                 color: white;
@@ -157,13 +168,20 @@ export default {
             ul {
                 list-style: none;
                 display: flex;
+                align-items: center;
 
                 li {
                     margin: 10px;
                     color: white;
+                    display: flex;
 
                     span {
                         color: $main-bar-color;
+                    }
+
+                    i {
+                        opacity: .5;
+                        font-size: 1.5em;
                     }
                 }
             }
