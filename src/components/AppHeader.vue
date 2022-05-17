@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <header class="header">
       header
-  </div>
+  </header>
 </template>
 
 <script>
@@ -10,6 +10,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+.header {
+    height:15vh;
+    background-color: blue;
+}
 
 </style>

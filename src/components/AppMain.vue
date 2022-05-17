@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main class="main">
       main
-  </div>
+  </main>
 </template>
 
 <script>
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+.main {
+    height: 35vh;
+}
 </style>
