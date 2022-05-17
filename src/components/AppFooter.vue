@@ -27,26 +27,30 @@
                         </div>
                         <div class="footer__top__col">
                             <h3>DC</h3>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
+                            <ul>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                            </ul>
                         </div>
                         <div class="footer__top__col">
                             <h3>SITES</h3>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
-                            <li><a href="">Prova</a></li>
+                            <ul>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                                <li><a href="">Prova</a></li>
+                            </ul>
 
                         </div>
                     
@@ -54,7 +58,23 @@
                 </div>
             </div>
 
-            <div class="footer__bottom"></div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom__left">
+                        <button>SIGN-UP NOW!</button>
+                    </div>
+                    <div class="footer__bottom__right">
+                        <ul>
+                            <li>FOLLOW US</li>
+                            <li>F</li>
+                            <li>F</li>
+                            <li>F</li>
+                            <li>F</li>
+                            <li>FS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
       
   </footer>
 </template>
@@ -67,6 +87,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
+@import "../style/variables.scss";
 
 .footer {
     height:50vh;
@@ -74,27 +95,14 @@ export default {
 
     &__top {
         height: 40vh;
-        background-color: black;
+        background-image: url("/Users/alexcapoluongo/boolean/vue-dc-comics/img/footer-bg.jpg");
         display: flex;
         justify-content: flex-start;
 
-        ul {
-                
-                list-style: none;
-
-                li {
-
-                    a {
-                        text-decoration: none;
-                        color:black
-                    }
-                }
-            }
 
         .col-wrap {
             height: 100%;
             width: 400px;
-            background-color: aquamarine;
             display:flex;
         }
 
@@ -102,12 +110,45 @@ export default {
             width: calc(100% / 3);
             height:100%;
             border: 2px solid red;
+
+            h3 {
+                color: white;
+            }
+
+            ul {
+                list-style: none;
+                li {
+                    a{
+                        text-decoration: none;
+                        color: #505661;
+                    }
+                }  
+            }
         }
     }
 
     &__bottom {
         height: 10vh;
-        background-color: green;
+        background-color: $footer-bar-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__left {
+            height: 100%;
+            width: 20%;
+            button {
+                padding: 5px;
+                border: 2px solid $main-bar-color;
+                background-color: $footer-bar-color;
+                color: white;
+            }
+        }
+
+        &__right {
+            width: 80%;
+            height: 100%;
+        }
     }
 }
 
