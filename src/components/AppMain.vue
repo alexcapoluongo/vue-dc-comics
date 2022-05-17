@@ -10,8 +10,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .main {
     height: 35vh;
+    min-width: 100%;
+    background-color: $main-bar-color;
 }
 </style>
