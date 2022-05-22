@@ -1,25 +1,30 @@
 <template>
   <div id="app">
     <AppHeader/>
-    <AppMain/>
+    <main>
+      <ProductList />
+    </main>
+    <AppPreFooter/>
     <AppFooter/>
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppMain from "./components/AppMain.vue";
+import AppPreFooter from "./components/AppPreFooter.vue";
 import AppFooter from "./components/AppFooter.vue";
+import ProductList from "./components/ProductList.vue";
 
 export default {
   components: {
   AppHeader,
-  AppMain,
-  AppFooter
+  AppPreFooter,
+  AppFooter,
+  ProductList
   }
 }
 </script>
 
 <style lang="scss">
-@import "./style/common.scss"
+@import "./style/common.scss" 
 </style>

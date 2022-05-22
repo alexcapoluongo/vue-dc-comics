@@ -106,7 +106,7 @@ export default {
 
     &__top {
         height: 40vh;
-        background-image: url("/Users/alexcapoluongo/boolean/vue-dc-comics/img/footer-bg.jpg");
+        background-image: url("/Users/alexcapoluongo/boolean/vue-dc-comics/src/assets/img/footer-bg.jpg");
         display: flex;
         justify-content: flex-start;
 

@@ -2,7 +2,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img :src="require('/Users/alexcapoluongo/boolean/vue-dc-comics/img/dc-logo.png')" alt="">
+                <img :src="require('/Users/alexcapoluongo/boolean/vue-dc-comics/src/assets/logo.png')" alt="">
             </div>
             <div class="menu">
                 <ul 
